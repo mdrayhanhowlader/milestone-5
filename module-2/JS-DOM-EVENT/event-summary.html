@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Summary</title>
+</head>
+<body>
+    <h1>Final DOM Event Handlers</h1>
+    <h3 id="handler-status">emon korona tumi.</h3>
+    <button onclick="buttonClicked()">Amake Click korle ami uporer h3 er likha change korbo</button>
+    <button id="event-listner">Ami ki sustho</button>
+
+    <h3 id="input-text-display">Clicked Successfully</h3>
+    <input id="input-field" type="text">
+    <button id="btn-update">update</button>
+
+    <script>
+        function buttonClicked(){
+           const changeText = document.getElementById('handler-status');
+           changeText.innerText = 'medicine silo ekhon valo lagbe'
+        }
+
+        document.getElementById('event-listner').addEventListener('click', function(){
+            document.getElementById('handler-status').innerText = "ekhon sushto tumi"
+        })
+
+
+
+        document.getElementById('btn-update').addEventListener('click', function(){
+            const inputField = document.getElementById('input-field')
+            const inputText = inputField.value;
+
+            const p = document.getElementById('input-text-display')
+            p.innerText = inputText
+
+            inputField.value = ''
+        })
+    </script>
+</body>
+</html>

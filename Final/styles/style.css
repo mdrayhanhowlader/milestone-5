@@ -1,0 +1,11 @@
+.player-cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+#player-cost{
+    border-radius: 3px;
+    border: 1px solid slategray;
+    background: none;
+}

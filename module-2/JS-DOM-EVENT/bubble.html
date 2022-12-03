@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubble</title>
+</head>
+<body id="body">
+    <h1>Exploring event Bubble</h1>
+    <section id="list-container">
+        <ul id="list-ul">
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">Id, reiciendis?</li>
+            <li id="item-3">Nisi, fuga.</li>
+            <li id="item-4">Alias, veniam.</li>
+            <li id="item-5">Nobis, quo?</li>
+            <li id="item-6">Necessitatibus, amet?</li>
+        </ul>
+    </section>
+
+
+    <script>
+        document.getElementById('item-2').addEventListener('click', function(event){
+            console.log('ami soto')
+            event.stopPropagation()
+        })
+
+        document.getElementById('list-ul').addEventListener('click', function(event){
+            console.log('ami sotor cheye ektu boro')
+        })
+
+        document.getElementById('list-container').addEventListener('click', function(event){
+            console.log('ami young')
+        })
+
+        document.getElementById('body').addEventListener('click', function(event){
+            console.log('ami old')
+        })
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trail</title>
+    <link rel="stylesheet" href="trail.css">
+</head>
+<body>
+    <div class="container">
+        <div class="players" id="players">
+
+            <div class="player">
+                <h2>neymar</h2>
+                <p>Price: <span>200</span></p>
+                <button onclick="addToCart(this)">Select</button>
+            </div>
+            <div class="player">
+                <h2>romero</h2>
+                <p>Price: <span>20</span></p>
+                <button onclick="addToCart(this)">Select</button>
+            </div>
+            <div class="player">
+                <h2>martinez</h2>
+                <p>Price: <span>80</span></p>
+                <button onclick="addToCart(this)">Select</button>
+            </div>
+            <div class="player">
+                <h2>mbappe</h2>
+                <p>Price: <span>150</span></p>
+                <button class="button" onclick="addToCart(this)">Select</button>
+            </div>
+            <div class="player">
+                <h2>benzema</h2>
+                <p>Price: <span>180</span></p>
+                <button class="button" onclick="addToCart(this)">Select</button>
+            </div>
+            <div class="player">
+                <h2>ronaldo</h2>
+                <p>Price: <span>220</span></p>
+                <button class="button" onclick="addToCart(this)">Select</button>
+            </div>
+            <div class="player">
+                <h2>monaldo</h2>
+                <p>Price: <span>220</span></p>
+                <button class="button" onclick="addToCart(this)">Select</button>
+            </div>
+            <div class="player">
+                <h2>sonaldo</h2>
+                <p>Price: <span>220</span></p>
+                <button class="button" onclick="addToCart(this)">Select</button>
+            </div>
+            <div class="player">
+                <h2>jonaldo</h2>
+                <p>Price: <span>220</span></p>
+                <button class="button" onclick="addToCart(this)">Select</button>
+            </div>
+
+        </div>
+        <div class="cart">
+            <h2>Order Item</h2>
+            <ol id="ol">
+
+            </ol>
+
+            <p id="stop" class="hidden">you can not add more</p>
+
+            <span class="text-center inline-block text-lg" id="span">00</span>
+        </div>
+    </div>
+
+    <script src="trail.js"></script>
+</body>
+</html>

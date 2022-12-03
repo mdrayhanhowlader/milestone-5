@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Heist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h2 class="text-4xl text-center font-semibold mt-4 text-teal-700">Money Master</h2>
+
+    <section class="main-section">
+
+        <div class="main p-8 w-4/5 mx-auto grid grid-cols-2 gap-4">
+            <div class="banner-area">
+                <img class="w-4/5" src="money-heist.jpg" alt="">
+            </div>
+            <div class="calculator-area bg-gray-300">
+                <div class="calculator p-8 text-center">
+                    <h2 class="py-2 text-xl font-semibold">Income</h2>
+
+                    <div class="income py-2">
+                        <label for="">Income: </label>
+                        <input type="number" name="number" id="income">
+                    </div>
+
+                    <h2 class="text-xl font-semibold">Expenses</h2>
+                    <div class="expenses py-4">
+                        <div class="food mb-4">
+                            <label for="">Food: </label>
+                            <input class="ml-4" type="number" name="" id="food">
+                        </div>
+                        <div class="rent mb-4">
+                            <label for="">Rent: </label>
+                            <input class="ml-5" type="number" name="" id="rent">
+                        </div>
+                        <div class="cloth mb-4">
+                            <label for="">Clothes: </label>
+                            <input type="number" name="" id="cloth">
+                        </div>
+
+                        <button id="calculate" class="calculate px-4 py-2 bg-green-300 mb-4 font-semibold rounded-md hover:bg-red-400 hover:text-white">Calculate</button>
+
+                        <p class="pt-2">Total Expenses: <span id="expense">00</span></p>
+
+                        <p class="pb-4">Balance: <span id="balance">00</span></p>
+
+                        <div class="parcentage">
+                            <label for="">Save: </label>
+                            <input class="w-10" type="number" name="" id="remain-amount">
+                            <span class="px-2">%</span>
+
+                            <button id="save" class="calculate px-4 py-2 bg-green-300 mb-8 font-semibold rounded-md hover:bg-red-400 hover:text-white">Save</button>
+                        </div>
+
+                        <p>Saving Amount: <span id="saving-amount">00</span></p>
+                        <p>Remaining Balance: <span id="remaining-amount">00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/common.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

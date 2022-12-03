@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.player {
+    background-color: beige;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+.player button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(4, 15, 12);
+    border: none;
+    font-size: 18px;
+}
+
+.player button:hover {
+    background-color: rgb(31, 3, 3);
+    cursor: pointer;
+}
+
+#stop {
+    display: none;
+}
+
+/* button:disabled, */
+button[disabled]{
+  background-color: #686868;
+}
+button[disabled]:hover {
+    background-color: #686868;
+
+}

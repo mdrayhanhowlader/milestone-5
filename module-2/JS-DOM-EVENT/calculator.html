@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <section>
+        <div id="main-container" class="main-container">
+            <textarea id="text-area" name="" id="" cols="70" rows="10"></textarea>
+    
+            <ul id="calculator" class="calculator">
+                <li id="item-1" class="item">1</li>
+                <li id="item-2" class="item">2</li>
+                <li id="item-3" class="item">3</li>
+                <li id="item-4" class="item">4</li>
+                <li id="item-5" class="item">5</li>
+                <li id="item-6" class="item">6</li>
+                <li id="item-7" class="item">7</li>
+                <li id="item-8" class="item">8</li>
+                <li id="item-9" class="item">9</li>
+                <li id="item-10" class="item">+</li>
+                <li id="item-11" class="item">0</li>
+                <li id="item-12" class="item">-</li>
+                <li id="item-13" class="item">/</li>
+                <li id="item-14" class="item">*</li>
+                <li id="item-15" class="item">x</li>
+                <li id="item-16" class="item">=</li>
+                <li id="item-17" class="item">CE</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <script>
+    //   const items =   document.getElementsByClassName('item')
+
+    //   for(const item of items){
+    //     item.addEventListener('click', function(event){
+    //         const singleItem = event.target.innerText;
+    //         const textArea = document.getElementById('text-area');
+    //     })
+    //   }
+
+
+    document.getElementById('calculator').addEventListener('click', function(event){
+        const singleItem = event.target.innerText
+        const textArea = document.getElementById('text-area')
+       let get =  textArea.innerText = singleItem
+       
+    })
+
+    </script>
+</body>
+</html>
